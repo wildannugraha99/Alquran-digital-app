@@ -1,0 +1,257 @@
+body{
+    background-color: whitesmoke;
+}
+
+.jumbotron{
+    text-align: center;
+    background-image: url(assets/masjid-pogung-dalangan-GGtHPUYx6oI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2% 0 10% 0;
+    
+}
+.jumbotron img{
+    margin-top: 5%;
+    width: 50%;
+    height: 22%;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    box-shadow: 2px 5px 5px rgb(172, 172, 172);
+    padding: 1%;
+}
+
+.jumbotron h3{
+    margin-top: .8%;
+}
+.root-html{
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 95%;
+    padding: 2% 0;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px 2px rgb(161, 161, 161);
+    z-index: 10;
+
+}
+.root-html h3{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+
+ ul{
+    overflow:scroll;
+    border: 1px solid whitesmoke;
+    width:95%;
+    height: 70%;
+    margin: auto;
+    overflow-x: hidden;
+    
+}
+
+.list-surah{
+    display: flex;
+    flex-direction: column;
+}
+
+.ket-surah{
+    flex-basis: 70%;
+    margin-top: 1%;
+    font-size: 100%;
+}
+.ket-surah p:nth-child(3){
+    margin-top: -5%;
+}
+
+.audio-surah audio{
+    width: 100%;
+    margin-bottom: 1.5%;
+}
+.btn-detail-surah{
+    display: flex;
+    flex-direction: row;
+    flex-basis: unset;
+    font-size: 85%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    
+}
+
+.btn-ketSurah{
+    
+    color: rgb(1, 41, 66);
+    font-weight: bold;
+    margin-top: 3%;
+    border: 1px solid lightskyblue;
+    background-color: lightskyblue;
+    border-radius: 18px;
+    box-shadow: 1px 5px rgb(6, 49, 77);
+    width: 110%;
+    margin-left: -30%;
+    padding: 1% 2%;
+}
+
+
+.btn-ketSurah:active{
+    position: relative;
+    top: 10;
+    box-shadow: none;
+}
+
+.btn-teksSurah{
+    
+    width: 120%;
+    margin-top: 4%;
+    color: rgb(1, 63, 1);
+    font-weight: bold;
+    border: 1px solid lightgreen;
+    background-color: lightgreen;
+    border-radius: 18px;
+    box-shadow: 1px 5px rgb(5, 77, 5);
+    margin-left: 10%;
+    padding: 1% 2%;
+}
+
+.btn-teksSurah:active{
+    position: relative;
+    top: 10;
+    box-shadow: none;
+}
+
+.back{
+    text-align: center;
+    float: right;
+    margin: -2% 4% 5% 0;
+    border-radius: 40px;
+    border: 2px solid red;
+    box-shadow: 1px 4.5px rgb(121, 2, 2); 
+    padding: 0.5% 2%;
+    background-color: red;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+.footer{
+    text-align: center;
+    margin: -1% 0 5% 0;
+}
+.footer img{
+    width: 5%;
+}
+.modal-body h1,h5{
+    text-align: center;
+}
+.modal-body p{
+    text-align: justify;
+    padding: 3%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+/*----------------------------------------------------------------*/
+
+@media(min-width:1000px){
+
+    .jumbotron{
+        text-align: center;
+        height: 70%;
+    }
+    .jumbotron img{
+        margin-top: 0;
+        width: 20%;
+        height: 80%;
+       
+    }
+
+    .root-html{
+        
+        margin: auto;
+        margin-top: -8%;
+        margin-bottom: 5%;
+        width: 80%;
+        padding: 2% 0;
+       
+    }
+
+    .root-html h3{
+        margin-left: 3%;
+        margin-bottom: 1.5%;
+       
+    }
+    
+     ul{
+        overflow:scroll;
+        border: 1px solid whitesmoke;
+        width:95%;
+        height: 82%;
+        margin: auto;
+        margin-top: 0%;
+        overflow-x: hidden;
+        
+    }
+
+    .list-surah{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ket-surah{
+        flex-basis: 70%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    .audio-surah audio{
+        width: 50%;
+    }
+
+    .ket-surah p:nth-child(3){
+        margin-top: -2%;
+    }
+    
+    .btn-detail-surah{
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .btn-ketSurah{
+        margin-top: 3%;
+        margin-bottom: 20%;
+        width: 120%;
+        padding: 8% 3%;
+    }
+
+    .btn-teksSurah{
+        width: 110%;
+        margin-top: 2%;
+        margin-left: -20%;
+        padding: 2% 2%;
+    }
+
+    .back{
+        margin: -2% 4% 2% 0;
+       padding: 0.5% 1%;
+       font-weight: bold;
+    }
+
+    .back:active{
+        position: relative;
+        top: 5;
+        box-shadow: none;
+    }
+    .footer{
+        text-align: center;
+        margin: -3% 0 2% 0;
+    }
+    .footer img{
+        width: 1.5%;
+    }
+}
