@@ -20,7 +20,7 @@
             const audioSurah = document.createElement('div')
             audioSurah.classList.add('audio-surah')
             audioSurah.innerHTML=`<audio controls>
-           <source src="${val.audio}" type="audio/ogg">
+           <source src="${val.audio}" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>`
 
