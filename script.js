@@ -1,6 +1,6 @@
-    fetch('https://al-quran-8d642.firebaseio.com/data.json?print=pretty')
+fetch('https://al-quran-8d642.firebaseio.com/data.json?print=pretty')
     .then(response => response.json())
-    .then(function jilid (respon) {
+    .then(function jilid(respon){
         
         const listSurah = document.createElement('h3')
         listSurah.innerText = 'List Surah'
@@ -91,13 +91,14 @@
 
             btnTeks.querySelector('.btn-teksSurah')
             btnTeks.addEventListener('click', function () {
+                
                 const closeBtn = document.createElement('div')
                     closeBtn.innerHTML = `<button type="button" class="back">Kembali</button>`
                     closeBtn.addEventListener('click', function(){
-                        document.querySelector('#myUl').innerHTML = ""
+                        document.querySelector('#myUl').innerHTML=""
                         jilid (respon)
                         closeBtn.innerHTML=""
-                        listSurah.innerText =""
+                        listSurah.innerText=""
                     })
 
                 const rootHtml = document.querySelector('.root-html')
@@ -111,7 +112,7 @@
                         
                         const teksSurahDetail = teskSurah
                         teksSurahDetail.forEach(data =>{
-                            const teksAr = document.createElement('h4')
+                            const teksAr = document.createElement('h2')
                             teksAr.innerText = data.ar
 
                             const teksTr = document.createElement('p')
@@ -132,20 +133,27 @@
                             const app = document.querySelector('.root-html')
                             app.append(ul)
                         })
-
-                        
-
-
-
                     })
-                    
-
-            })
+                })
         });
         
-
     })
+    
 
+const searchSurah = document.querySelector('#input-search');
+searchSurah.addEventListener('keyup', function(e){
+    const cariSurah = e.target.value.toLowerCase();
+    const itemSurah = document.querySelectorAll('.list-surah');
+    itemSurah.forEach(item => {
+        const listSurah = item.firstChild.firstChild.textContent.toLowerCase();
+        
+        if(listSurah.indexOf(cariSurah)!= -1){
+            item.setAttribute("style", "display : flex;");
+            }else{
+            item.setAttribute("style", "display : none !important;");
+        }
+    });
+})
    
 
    

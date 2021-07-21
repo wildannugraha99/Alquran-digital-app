@@ -23,6 +23,25 @@ body{
 .jumbotron h3{
     margin-top: .8%;
 }
+
+#input-search{
+    margin-top: 1.5%;
+    text-align: center;
+    width: 90%;
+    font-size: 110%;
+    border-radius: 25px;
+    padding: 0.3% 1%;
+    border: none;
+    opacity: .8;
+    cursor: pointer;
+    
+}
+#input-search:focus{
+  outline:none;
+  border: 3px solid gray;
+  opacity: 1;
+}
+
 .root-html{
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
@@ -83,7 +102,6 @@ body{
 }
 
 .btn-ketSurah{
-    
     color: rgb(1, 41, 66);
     font-weight: bold;
     margin-top: 3%;
@@ -95,8 +113,6 @@ body{
     margin-left: -30%;
     padding: 1% 2%;
 }
-
-
 .btn-ketSurah:active{
     position: relative;
     top: 10;
@@ -122,6 +138,8 @@ body{
     top: 10;
     box-shadow: none;
 }
+
+
 
 .back{
     text-align: center;
@@ -160,19 +178,26 @@ body{
 
     .jumbotron{
         text-align: center;
-        height: 70%;
+        height: 80%;
     }
     .jumbotron img{
         margin-top: 0;
         width: 20%;
-        height: 80%;
+        height: 70%;
+    }
+    #input-search{
+      
+        width: 90vh;
+        font-size: 150%;
+       
+        padding: 0.3% 0%;
        
     }
+  
 
     .root-html{
-        
         margin: auto;
-        margin-top: -8%;
+        margin-top: -16vh;
         margin-bottom: 5%;
         width: 80%;
         padding: 2% 0;
@@ -218,15 +243,17 @@ body{
         display: flex;
         flex-direction: column;
         font-size: 100%;
+        margin: auto;
         margin-top: 2%;
         margin-bottom: 2%;
+           
     }
 
     .btn-ketSurah{
         margin-top: 3%;
         margin-bottom: 20%;
-        width: 120%;
-        padding: 8% 3%;
+        width: 125%;
+        padding: 2% 2%;
     }
 
     .btn-teksSurah{
@@ -235,6 +262,7 @@ body{
         margin-left: -20%;
         padding: 2% 2%;
     }
+    
 
     .back{
         margin: -2% 4% 2% 0;
